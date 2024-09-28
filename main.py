@@ -15,7 +15,7 @@ st.set_page_config(
 )
 
 # Import pages
-from Tabs import home, data, predict, visualise
+from Tabs import home, data, predict #visualise
 
 
 
@@ -24,7 +24,7 @@ Tabs = {
     "Home": home,
     "Data Info": data,
     "Prediction": predict,
-    "Visualisation": visualise
+    #"Visualisation": visualise
     #"About me": about
 }
 
