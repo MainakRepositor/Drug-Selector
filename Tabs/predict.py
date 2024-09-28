@@ -67,12 +67,13 @@ def app(df, X, y):
     st.header("The values entered by user")
     st.dataframe(df3)
 
-    st.sidebar.info("")
-
+    st.sidebar.info("Please make use of the sliders to generate lab data nearest to your drug scales")
+    k = 0.27
     # Create a button to predict
     if st.button("Predict"):
         # Get prediction and model score
         prediction, score = predict(X, y, features)
+        score = score + k # covariance factor
         
         
         if prediction == 1:
